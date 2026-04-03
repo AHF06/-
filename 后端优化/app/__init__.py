@@ -2,10 +2,10 @@ from flask import Flask
 from flask_cors import CORS
 from werkzeug.exceptions import HTTPException
 
-from app.config import config_map, Config
-from app.models.base import db
-from app.utils.response import error, success
-from app.utils.exceptions import BusinessException
+from 后端优化.app.config import config_map, Config
+from 后端优化.app.models.base import db
+from 后端优化.app.utils.response import error, success
+from 后端优化.app.utils.exceptions import BusinessException
 
 
 def create_app(config_name='default'):
@@ -51,7 +51,7 @@ def create_app(config_name='default'):
         return success({'status': 'ok', 'message': '服务运行正常'})
     
         # ========== 注册路由 ==========
-    from app.api.upload import register_upload_routes
+    from 后端优化.app.api.upload import register_upload_routes
     register_upload_routes(app)
     
     # ========== 静态文件服务 ==========

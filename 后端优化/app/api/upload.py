@@ -1,9 +1,9 @@
 from flask import request, current_app
-from app.utils.response import success, error
-from app.utils.file_utils import save_upload_file
-from app.models.base import db
-from app.models.detection_record import DetectionRecord
-from app.services.detection_service import DetectionService
+from 后端优化.app.utils.response import success, error
+from 后端优化.app.utils.file_utils import save_upload_file
+from 后端优化.app.models.base import db
+from 后端优化.app.models.detection_record import DetectionRecord
+from 后端优化.app.services.detection_service import DetectionService
 import json
 
 

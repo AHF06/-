@@ -1,5 +1,5 @@
 import json
-from app.models.base import db, BaseModel
+from 后端优化.app.models.base import db, BaseModel
 
 
 class DetectionRecord(BaseModel):
